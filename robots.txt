@@ -1,0 +1,39 @@
+# robots.txt für MeinRechner24
+# Diese Datei teilt Suchmaschinen-Crawlern mit, welche Seiten sie crawlen dürfen
+
+# Erlaube allen Suchmaschinen, alle Seiten zu crawlen
+User-agent: *
+Allow: /
+
+# Sitemap-Location (wichtig für Google & andere Suchmaschinen)
+Sitemap: https://meinrechner24.de/sitemap.xml
+
+# Spezifische Regeln für Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Spezifische Regeln für Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Blockiere bestimmte Verzeichnisse (falls vorhanden)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
+
+# Erlaube alle JavaScript- und CSS-Dateien (wichtig für SEO)
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Blockiere keine wichtigen Seiten
+# Alle Rechner-Seiten sind erlaubt (durch Allow: /)
+
+
